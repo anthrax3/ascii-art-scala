@@ -1,0 +1,15 @@
+apply plugin: 'scala'
+
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.scala-lang:scala-library:2.11.2'
+
+    // We use the latest version of the scalatest for testing our library
+    testCompile 'junit:junit:4.11'
+    testCompile 'org.scalatest:scalatest_2.11:2.2.2'
+}
